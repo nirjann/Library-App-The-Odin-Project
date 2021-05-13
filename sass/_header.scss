@@ -1,0 +1,42 @@
+@use 'globals' as *;
+
+.head_section {
+ position: relative;
+  background: url("https://unsplash.com/photos/HH4WBGNyltc/download?force=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(map-get($colors, 'overlay'), 0.2);
+  backdrop-filter: blur(8px);
+
+  
+}
+
+.header_wrapper {
+ 
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: map-get($map: $colors, $key: "primary-light");
+
+}
+
+.header_logo {
+  i {
+    color: map-get($map: $colors, $key: "primary-light");
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-inline: 0.5rem;
+
+  i {
+    margin-inline: 0.3rem;
+  }
+}

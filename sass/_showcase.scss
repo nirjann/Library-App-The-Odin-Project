@@ -1,0 +1,40 @@
+.showcase-wrapper {
+  margin-top: 4rem;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    border-bottom: 0.2px solid rgb(194, 189, 189);
+    padding-bottom: 3rem;
+  }
+}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+  margin-top: 4rem;
+}
+
+.book {
+    position: relative;
+  h4 {
+      font-size: 30px;
+    margin-block: 1.5rem;
+  }
+}
+
+.book-details {
+  li {
+    font-size: 18px;
+    margin-block: 1.2rem;
+  }
+
+  li:last-child {
+    margin-top: 4rem;
+
+    a {
+        padding-inline: 2.2rem;
+    }
+  }
+}
+

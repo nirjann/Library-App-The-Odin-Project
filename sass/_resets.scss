@@ -1,0 +1,29 @@
+@use 'globals' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($map: $colors, $key: 'primary-light');
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    @include font('roboto', 'light', 'medium');
+  
+}
+
+h1, h2, h3, h4 {
+    @include font('slab', 'medium', 'large');
+}
+
+img {
+    width: 100%;
+}

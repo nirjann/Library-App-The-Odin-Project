@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding-inline: 12rem;
+}
+
+.card {
+  padding: 0.75rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.35);
+}
+
+.btn-primary {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #111;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+.btn-primary:hover {
+  background-color: #e4e4e4;
+  color: #111;
+  border: 1px solid #111;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  border: 0.5px solid #fff;
+  padding: 0.75rem;
+  border-radius: 3px;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #111;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.switch input {
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+input:checked + .slider {
+  background-color: #111;
+}
+
+input:focus + .slider::before {
+  box-shadow: 0 0 1px #111;
+}
+
+input:checked + .slider::before {
+  transform: translateX(2rem);
+}
+
+.head_section {
+  position: relative;
+  background: url("https://unsplash.com/photos/HH4WBGNyltc/download?force=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(55, 6, 23, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.header_wrapper {
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.header_logo i {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-inline: 0.5rem;
+}
+.nav-item i {
+  margin-inline: 0.3rem;
+}
+
+.hero {
+  margin-top: 4rem;
+  padding-block: 1.2rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_text {
+  text-align: left;
+  color: #fff;
+}
+.hero_text h1 {
+  font-size: 58px;
+  margin-bottom: 1.5rem;
+}
+.hero_text h1 span {
+  background-color: rgba(9, 2, 43, 0.2);
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+.hero_text p {
+  margin-top: 4.5rem;
+  font-size: 34px;
+}
+
+.form_wrapper {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form_wrapper h4 {
+  font-size: 34px;
+  margin-bottom: 1.5rem;
+}
+.form_wrapper input {
+  text-align: left;
+  display: block;
+  margin: 1rem;
+  padding-block: 1.5rem;
+  padding-inline: 3.6rem;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.form_wrapper input:hover {
+  border: none;
+  outline: none;
+}
+.form_wrapper input[type=text] {
+  border-bottom: 0.3px solid rgba(100, 63, 63, 0.2);
+}
+.form_wrapper input[type=text]:focus {
+  border-bottom: 2px solid #111;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+.form_wrapper input[type=number] {
+  border-bottom: 0.3px solid rgba(100, 63, 63, 0.2);
+}
+.form_wrapper input[type=number]:focus {
+  border-bottom: 2px solid #111;
+  transition: all 0.2s ease;
+}
+
+.add_btn {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.showcase-wrapper {
+  margin-top: 4rem;
+  text-align: center;
+}
+.showcase-wrapper h1 {
+  font-size: 3rem;
+  border-bottom: 0.2px solid #c2bdbd;
+  padding-bottom: 3rem;
+}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+  margin-top: 4rem;
+}
+
+.book {
+  position: relative;
+}
+.book h4 {
+  font-size: 30px;
+  margin-block: 1.5rem;
+}
+
+.book-details li {
+  font-size: 18px;
+  margin-block: 1.2rem;
+}
+.book-details li:last-child {
+  margin-top: 4rem;
+}
+.book-details li:last-child a {
+  padding-inline: 2.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

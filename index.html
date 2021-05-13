@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library | The Odin Project</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+  <body>
+    <section class="container head_section">
+      
+      <header>
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <a href="index.html">
+              <i class="fas fa-book-reader fa-3x"></i>
+              <h2 style="display: inline; margin-inline: 0.9rem">
+                The Best Library
+            </a>
+            </h2>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="btn-secondary"
+                  ><i class="fas fa-hdd"></i>Local Storage</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="" class="btn-secondary"
+                  ><i class="fas fa-cloud-upload-alt"></i>Remote Storage</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="hero_text">
+          <h1>Welcome to <span>The Library</span></h1>
+          <p>
+            The Best Library that you've ever seen!
+            
+          </p>
+        </div>
+
+        <div class="card form_wrapper">
+          <h4>Add New Book</h4>
+          <form id = "book-form">
+            <input type="text" name="title" id="title" placeholder="Title" />
+            <input type="text" name="author" id="author" placeholder="Author" />
+            <input
+              type="text"
+              name="publisher"
+              id="publisher"
+              placeholder="Publisher"
+            />
+            <input
+              type="number"
+              name="pages"
+              id="pages"
+              placeholder="Total Pages"
+            />
+            <label for="read" style="display: inline-block; margin: 1rem"
+              >Read?</label
+            >
+            <input
+              type="checkbox"
+              name="read"
+              id="read"
+              style="display: inline-block; margin: 1rem"
+            />
+            <div class="add_btn" ><a href="" class="btn-primary" style="display: block;" id="add-btn">Add Book</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <div class="container showcase-wrapper">
+        <h1>Books in The Library</h1>
+        <div class="status-bar" id = "status-bar">
+          
+        </div>
+        <div class="library" id = "library-showcase">
+          
+          <div class="card book">
+            <h4>Harry Potter</h4>
+            <ul class="book-details">
+              <li>Author: JK Rowling</li>
+              <li><b>Publisher: </b>Bloomsbury Publishing (UK) Scholastic Press (USA) Pottermore (e-books; all languages)</li>
+              <li>Pages: 525</li>
+              <li>Read <label for="read-slider" class="switch"> <input type="checkbox" name="read-slider" id="read-slider"><span class = "slider"></span></label></li>
+              <li class = "remove-btn"><a href="" class="btn-primary " id="remove-entry">Remove Entry</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@use 'globals' as *;
+
+.hero {
+  margin-top: 4rem;
+  padding-block: 1.2rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.hero_text {
+    text-align: left;
+    color: #fff;
+  
+
+    h1 {
+      font-size: 58px;
+      margin-bottom: 1.5rem;
+
+      span {
+        background-color: rgba(9, 2, 43, 0.2);
+        padding: $layout-padding-content;
+        border-radius: 5px;
+      }
+    }
+
+    p {
+      margin-top: 4.5rem;
+      font-size: 34px;
+    }
+}
+.form_wrapper {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+    text-align: center;
+
+    h4 {
+      font-size: 34px;
+      margin-bottom: 1.5rem;
+    }
+  input {
+    text-align: left;
+    display: block;
+    margin: 1rem;
+    padding-block: 1.5rem;
+    padding-inline: 3.6rem;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    &:hover {
+      border: none;
+      outline: none;
+     
+    }
+  }
+
+  input[type="text" ] {
+      border-bottom: 0.3px solid rgba(100, 63, 63, 0.2);
+      &:focus {
+          border-bottom: 2px solid #111;
+          transition: all 0.2s ease;
+          font-size: 18px;
+      }
+  }
+
+  input[type="number"] {
+    border-bottom: 0.3px solid rgb(100, 63, 63, 0.2);
+
+    &:focus {
+        border-bottom: 2px solid #111;
+        transition: all 0.2s ease;
+    }
+  }
+  
+}
+
+.add_btn {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}

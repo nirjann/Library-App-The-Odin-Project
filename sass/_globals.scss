@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400;500&display=swap');
+
+$font-family: (
+    'roboto': "Roboto",
+    'slab': 'Roboto Slab',
+);
+
+$font-weight: (
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+);
+
+$font-size: (
+    'small': 14px,
+    'medium': 18px,
+    'large': 24px,
+);
+
+$colors: (
+    'primary-light': #fff,
+    'overlay': #370617,
+    'card-overlay': #fff,
+);
+
+@mixin font($family, $weight, $size) {
+    font-family: map-get($map: $font-family, $key: $family), sans-serif;
+    font-weight: map-get($map: $font-weight, $key: $weight);
+    font-size: map-get($map: $font-size, $key: $size);
+}
+
+$layout-padding-container: 12rem;
+$layout-padding-content: 0.75rem;
+
+$box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.35);
+
+// form speciic style
